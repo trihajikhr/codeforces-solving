@@ -4,5 +4,5 @@ Describe the solution you are adding or updating.
 
 ## Checks
 
-- [ ] AtCoder problem only
+- [ ] Codeforces problem only
 - [ ] Clean code
