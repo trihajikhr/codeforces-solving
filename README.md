@@ -17,4 +17,4 @@ Total problems by rating:
 - 900 :
 - 1000:
 - 1100:
-- 1200:
+- 1200: 5
