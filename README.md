@@ -14,7 +14,7 @@ It is meant as a reference and learning resource for anyone interested in compet
 Total problems by rating:
 
 - 800 : 20
-- 900 :
+- 900 : 5
 - 1000:
 - 1100:
-- 1200: 5
+- 1200: 
