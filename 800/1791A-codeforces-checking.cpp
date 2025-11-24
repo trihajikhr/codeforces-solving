@@ -8,10 +8,9 @@ auto main() -> int {
     cin >> t;
     string s = "codeforces";
     while (t--) {
-        array<int, 3> arr{};
-        for (auto& x : arr) cin >> x;
-        ranges::sort(arr);
-        cout << arr[1] << "\n";
+        char c;
+        cin >> c;
+        cout << (s.find(c) != string::npos ? "YES" : "NO") << "\n";
     }
     return 0;
 }

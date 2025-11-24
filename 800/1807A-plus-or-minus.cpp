@@ -6,12 +6,10 @@ auto main() -> int {
     cin.tie(nullptr);
     int t;
     cin >> t;
-    string s = "codeforces";
     while (t--) {
-        array<int, 3> arr{};
-        for (auto& x : arr) cin >> x;
-        ranges::sort(arr);
-        cout << arr[1] << "\n";
+        int a, b, c;
+        cin >> a >> b >> c;
+        cout << (a+b==c ? "+" : "-") << "\n";
     }
     return 0;
 }
