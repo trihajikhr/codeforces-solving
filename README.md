@@ -13,7 +13,7 @@ It is meant as a reference and learning resource for anyone interested in compet
 ## Total Problem:
 Total problems by rating:
 
-- 800 : 50
+- 800 : 60
 - 900 : 5
 - 1000:
 - 1100:
