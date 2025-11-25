@@ -1,0 +1,18 @@
+#include<iostream>
+#include<vector>
+using namespace std;
+
+void solve() {
+    int a, b;
+    cin >> a >> b;
+    cout << (a-a) + (b-a) << "\n";
+}
+
+auto main() -> int {
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+    int t;
+    cin >> t;
+    while (t--) solve();
+    return 0;
+}
