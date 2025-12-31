@@ -4,12 +4,8 @@ using namespace std;
 auto main() -> int {
     int n;
     cin >> n;
-    for (int i=0; i<n; i++) {
-        if (i%2==0) cout << "I hate ";
-        else cout << "I love ";
-
-        if (i==n-1) cout << "it";
-        else cout << "that ";
+    for (int i=1; i<=n; i++) {
+        cout << (i%2 ? "I hate " : "I love ") << (i != n ? "that " : "it");
     }
     return 0;
 }

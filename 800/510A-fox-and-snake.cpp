@@ -5,13 +5,11 @@ auto main() -> int {
     int n, m;
     cin >> n >> m;
 
-    bool pass = 1;
-    for (int i=1; i<= n; i++) {
-        for (int j=1; j<= m; j++) {
-            cout << (i % 2 ? "#" : pass ? j==m ? "#" : "." : j==1 ? "#" : ".");
-        }
-        if (i%2==0) {
-            pass ^= 1;
+    bool right = false;
+    for (int i=1; i <= n; i++) {
+        if (i%2) right = !right;
+        for (int j=1; j <= m; j++) {
+            cout << (i%2 ? "#" : right ? j==m ? "#" : "." : j==1 ? "#" : ".");
         }
         cout << "\n";
     }

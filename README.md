@@ -13,8 +13,11 @@ It is meant as a reference and learning resource for anyone interested in compet
 ## Total Problem:
 Total problems by rating:
 
+Daftar yang sudah dipelajar dengan teknik yang benar:
+- 800: 34
+
 - 800 : 100
 - 900 : 5
-- 1000: 10
+- 1000: 15
 - 1100:
 - 1200: 
