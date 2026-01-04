@@ -2,15 +2,14 @@
 using namespace std;
 
 auto main() -> int {
-    int n;
+    int n, cur = 0, ans = 0;
     cin >> n;
-    int ans = 0, cur=0;
     for (int i=0, x; i<n; i++) {
         cin >> x;
-        if (cur == 0 && x == -1) {
-            ans++;
-        } else {
-            cur += x;
+        if (x > 0) cur += x;
+        else {
+            if (cur > 0) cur--;
+            else ans++;
         }
     }
     cout << ans;

@@ -1,12 +1,12 @@
 #include<iostream>
-#include<algorithm>
 #include<array>
+#include<algorithm>
 using namespace std;
 
 auto main() -> int {
-    array<int, 3> arr{};
-    for (auto& x : arr) cin >> x;
-    ranges::sort(arr);
-    cout << (arr[2]-arr[1]) + (arr[1]-arr[0]);
+    array<int, 3> a;
+    for (auto& x : a) cin >> x;
+    ranges::sort(a);
+    cout << (a[2] - a[1]) + (a[1] - a[0]);
     return 0;
 }

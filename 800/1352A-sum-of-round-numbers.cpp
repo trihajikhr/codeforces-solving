@@ -3,35 +3,23 @@
 using namespace std;
 
 void solve() {
-    int n;
+    int n, m = 1;
     cin >> n;
+    vector<int> num;
 
-    vector<int> data;
-
-    int cur = 1, ans = 0;
     while (n > 0) {
-        int temp = n % 10;
-        n /= 10;
-
-        if (temp) {
-            data.push_back(temp * cur);
-            ans++;
-        }
-        if (cur==1) cur = 10;
-        else cur *= 10;
+        if (n % 10 != 0) num.push_back((n % 10) * m);
+        n/=10, m *= 10;
     }
-    cout << ans << "\n";
-    for (const auto& x : data) {
-        cout << x << " ";
-    }
+    cout << num.size() << "\n";
+    for (const auto& x : num) cout << x << " ";
     cout << "\n";
 }
 
 auto main() -> int {
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
-    int t;
-    cin >> t;
+    int t; cin >> t;
     while (t--) solve();
     return 0;
 }

@@ -2,9 +2,9 @@
 using namespace std;
 
 void solve() {
-    int n;
+    long long n;
     cin >> n;
-    cout << (n <= 2 ? 0 : n%2 ? n/2 : (n/2)-1) << '\n';
+    cout << (n-1) /2 << "\n";
 }
 
 auto main() -> int {

@@ -2,29 +2,22 @@
 #include<unordered_map>
 using namespace std;
 
-void getData(unordered_map<char, int>& dasmap, string s) {
-    for (char c: s) {
-        dasmap[c]++;
-    }
-}
-
 auto main() -> int {
-    string a,b ,c;
+    string a, b, c;
     cin >> a >> b >> c;
-    unordered_map<char, int> dasmap;
-    getData(dasmap,a);
-    getData(dasmap,b);
+    unordered_map<char,int> dasmap;
+    for (char & x :a) dasmap[x]++;
+    for (char & x :b) dasmap[x]++;
+    for (char & x :c) dasmap[x]--;
 
-    for (char & c : c) {
-        dasmap[c]--;
-    }
-
+    bool ans = true;
     for (const auto& x : dasmap) {
-        if (x.second != 0) {
-            cout << "NO";
-            return 0;
+        if (x.second) {
+            ans = false;
+            break;
         }
     }
-    cout << "YES";
+
+    cout << (ans ? "YES" : "NO");
     return 0;
 }
